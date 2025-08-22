@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirNow – Profile</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="app-header">
+      <button class="icon-button" onclick="location.href='index.html'">
+        ☰
+      </button>
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="Search for a location"
+          aria-label="Search for a location"
+        />
+      </div>
+      <button class="icon-button" onclick="location.href='notifications.html'">
+        🔔
+      </button>
+    </header>
+    <main>
+      <section class="profile-card">
+        <h2>Profile</h2>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div>
+            <p>Tom</p>
+            <a href="#" class="text-small">Sign out</a>
+          </div>
+          <span style="font-size: 2rem">👤</span>
+        </div>
+        <!-- Locations -->
+        <div class="profile-section">
+          <h3>Locations</h3>
+          <ul class="profile-list">
+            <li>Home <span>BS6 4QA</span></li>
+            <li>School <span>BS1 4TH</span></li>
+            <li>Work <span>BA1 U12</span></li>
+          </ul>
+        </div>
+        <!-- Modes & Schedule -->
+        <div class="profile-section">
+          <h3>Modes &amp; Schedule</h3>
+          <p class="text-small">Default mode on open</p>
+          <div style="display: flex; gap: 0.5rem; margin-top: 0.25rem">
+            <button
+              class="button"
+              style="background-color: var(--color-primary)"
+            >
+              School-run
+            </button>
+            <button class="button secondary">Commute</button>
+          </div>
+          <p class="text-small" style="margin-top: 0.5rem">
+            Weekday schedule start time
+          </p>
+          <div
+            style="
+              display: inline-block;
+              padding: 0.5rem 1rem;
+              background-color: #f5f5f5;
+              border-radius: var(--radius);
+              margin-top: 0.25rem;
+            "
+          >
+            8:30 AM
+          </div>
+        </div>
+        <!-- Accessibility settings -->
+        <div class="profile-section">
+          <h3>Accessibility</h3>
+          <p class="text-small">Text size: Medium</p>
+          <p class="text-small">High contrast: Off</p>
+          <p class="text-small">Color-blind palette: Off</p>
+        </div>
+      </section>
+    </main>
+    <nav class="bottom-nav">
+      <a href="index.html"><span class="nav-icon">🏠</span>Home</a>
+      <a href="map.html"><span class="nav-icon">🗺️</span>Map</a>
+      <a href="profile.html" class="active"><span class="nav-icon">👤</span>Profile</a>
+    </nav>
+  </body>
+</html>

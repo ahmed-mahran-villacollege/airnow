@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirNow – Commute</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="app-header">
+      <button class="icon-button" onclick="location.href='index.html'">
+        ☰
+      </button>
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="Search for a location"
+          aria-label="Search for a location"
+        />
+      </div>
+      <button class="icon-button" onclick="location.href='notifications.html'">
+        🔔
+      </button>
+    </header>
+    <nav class="tabs">
+      <a href="index.html">Home</a>
+      <a href="school-run.html">School-run</a>
+      <a href="commute.html" class="active">Commute</a>
+    </nav>
+    <main>
+      <section
+        class="card"
+        style="display: flex; flex-direction: column; gap: 1rem"
+      >
+        <div style="display: flex; gap: 1rem">
+          <!-- Bike card -->
+          <div
+            class="commute-card"
+            style="flex: 1; border: 1px solid var(--color-card-border)"
+          >
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <span style="font-size: 1.5rem">🚴‍♂️</span>
+              <span class="status-pill status-good">Good – 18</span>
+            </div>
+            <p style="margin-top: 0.5rem; font-size: 1rem; font-weight: 600">
+              22 min
+            </p>
+            <p class="text-small">Free</p>
+            <p class="text-small" style="margin-top: 1rem">
+              Enjoy fresh air in good air conditions
+            </p>
+            <button
+              class="button secondary"
+              style="margin-top: 1rem"
+              onclick="location.href='map.html'"
+            >
+              Choose Bike
+            </button>
+          </div>
+          <!-- Bus card -->
+          <div
+            class="commute-card"
+            style="flex: 1; border: 1px solid var(--color-card-border)"
+          >
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <span style="font-size: 1.5rem">🚌</span>
+              <span class="status-pill status-fair">Fair – 34</span>
+            </div>
+            <p style="margin-top: 0.5rem; font-size: 1rem; font-weight: 600">
+              35 min
+            </p>
+            <p class="text-small">£2.50 single fare</p>
+            <p class="text-small" style="margin-top: 1rem">
+              Stable air, less physical effort
+            </p>
+            <button
+              class="button secondary"
+              style="margin-top: 1rem"
+              onclick="location.href='map.html'"
+            >
+              Choose Bus
+            </button>
+          </div>
+        </div>
+        <!-- Forecast graph -->
+        <h2 style="margin-top: 1rem">24-Hour Forecast</h2>
+        <section class="forecast-container" style="overflow: hidden">
+          <!-- Embed Open Data (iframe) -->
+          <iframe
+            src="https://bcc.maps.arcgis.com/apps/dashboards/8c0588ab9b17407b9263d1cdf86b62f3#layout_0_block_36"
+            title=" Air Quality Dashboard embedded map"
+            style="
+              width: 800px;
+              height: 600px;
+              border: none;
+              margin-top: -235px;
+              margin-left: -35px;
+            "
+          ></iframe>
+        </section>
+      </section>
+    </main>
+    <nav class="bottom-nav">
+      <a href="index.html"><span class="nav-icon">🏠</span>Home</a>
+      <a href="map.html"><span class="nav-icon">🗺️</span>Map</a>
+      <a href="profile.html"><span class="nav-icon">👤</span>Profile</a>
+    </nav>
+  </body>
+</html>

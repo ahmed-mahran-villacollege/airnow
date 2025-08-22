@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirNow – Map</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="app-header">
+      <button class="icon-button" onclick="location.href='index.html'">
+        ☰
+      </button>
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="Search for a location"
+          aria-label="Search for a location"
+        />
+      </div>
+      <button class="icon-button" onclick="location.href='notifications.html'">
+        🔔
+      </button>
+    </header>
+    <nav class="tabs">
+      <a href="index.html">Home</a>
+      <a href="school-run.html">School-run</a>
+      <a href="commute.html">Commute</a>
+    </nav>
+    <main>
+      <section class="map-container" style="overflow: hidden">
+        <!-- Embed Open Data  map (iframe) -->
+        <iframe
+          src="https://experience.arcgis.com/experience/bcf5a6312bc04ffeb43db67cd57f5439"
+          title=" Air Quality Dashboard embedded map"
+          style="
+            width: 800px;
+            height: 2000px;
+            border: none;
+            margin-top: -900px;
+            margin-left: -100px;
+          "
+        ></iframe>
+      </section>
+      <!-- Route Details sheet -->
+      <section class="route-sheet">
+        <h3>Route A Details</h3>
+        <p><strong>Distance:</strong> 2.4 km</p>
+        <p><strong>ETA:</strong> 12 min</p>
+        <p>
+          <strong>Exposure Estimate:</strong> Low – Good air quality along this
+          route
+        </p>
+        <button class="button" style="width: 100%; margin-top: 0.75rem">
+          Start Route
+        </button>
+      </section>
+    </main>
+    <nav class="bottom-nav">
+      <a href="index.html"><span class="nav-icon">🏠</span>Home</a>
+      <a href="map.html" class="active"><span class="nav-icon">🗺️</span>Map</a>
+      <a href="profile.html"><span class="nav-icon">👤</span>Profile</a>
+    </nav>
+  </body>
+</html>

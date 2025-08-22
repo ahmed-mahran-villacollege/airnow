@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirNow – School-run</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="app-header">
+      <button class="icon-button" onclick="location.href='index.html'">
+        ☰
+      </button>
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="Search for a location"
+          aria-label="Search for a location"
+        />
+      </div>
+      <button class="icon-button" onclick="location.href='notifications.html'">
+        🔔
+      </button>
+    </header>
+    <nav class="tabs">
+      <a href="index.html">Home</a>
+      <a href="school-run.html" class="active">School-run</a>
+      <a href="commute.html">Commute</a>
+    </nav>
+    <main>
+      <section class="card">
+        <h2>Park Street</h2>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <span class="status-pill status-good">Good</span>
+          <button
+            class="icon-button"
+            onclick="location.href='map.html'"
+            title="Open map"
+          >
+            🗺️
+          </button>
+        </div>
+        <p class="text-small" style="margin-top: 0.5rem; font-style: italic">
+          Good for biking
+        </p>
+        <div class="button-row" style="margin-top: 0.75rem">
+          <button class="button" onclick="location.href='map.html'">
+            Go Now
+          </button>
+        </div>
+      </section>
+      <section class="card">
+        <h2>Alternatives</h2>
+        <ul class="alternative-list">
+          <li>
+            <span>Main Street</span>
+            <span class="status-pill status-fair">Fair</span>
+          </li>
+          <li>
+            <span>Maroon Road</span>
+            <span class="status-pill status-good">Good</span>
+          </li>
+          <li>
+            <span>West Side Link Road</span>
+            <span class="status-pill status-poor">Poor</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <nav class="bottom-nav">
+      <a href="index.html"><span class="nav-icon">🏠</span>Home</a>
+      <a href="map.html"><span class="nav-icon">🗺️</span>Map</a>
+      <a href="profile.html"><span class="nav-icon">👤</span>Profile</a>
+    </nav>
+  </body>
+</html>

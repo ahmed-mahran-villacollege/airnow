@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirNow – Notifications</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="app-header">
+      <button class="icon-button" onclick="location.href='index.html'">
+        ☰
+      </button>
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="Search for a location"
+          aria-label="Search for a location"
+        />
+      </div>
+      <button class="icon-button" onclick="location.href='notifications.html'">
+        🔔
+      </button>
+    </header>
+    <main>
+      <h2 style="padding: 1rem">Notifications</h2>
+      <section class="notification-card">
+        <label for="toggle"
+          >Air Quality Alerts
+          <div class="toggle" id="toggle"></div>
+        </label>
+        <p class="text-small">Notify me if air quality worsens near me</p>
+      </section>
+      <section class="notification-card">
+        <h3>Recent Notifications</h3>
+        <p class="text-small" style="margin-top: 1rem">
+          No recent notifications<br />You’ll see notifications about air
+          quality changes here.
+        </p>
+      </section>
+      <div style="margin: 1rem">
+        <button class="button secondary" style="width: 100%">
+          Manage notifications
+        </button>
+      </div>
+    </main>
+    <nav class="bottom-nav">
+      <a href="index.html"><span class="nav-icon">🏠</span>Home</a>
+      <a href="map.html"><span class="nav-icon">🗺️</span>Map</a>
+      <a href="profile.html"><span class="nav-icon">👤</span>Profile</a>
+    </nav>
+  </body>
+</html>
